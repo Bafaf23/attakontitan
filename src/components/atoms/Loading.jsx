@@ -6,7 +6,7 @@ export default function Loading() {
         <div className="absolute inset-0 border-4 border-t-green-500 rounded-full animate-spin"></div>
       </div>
       <p className="text-green-500 font-mono text-sm tracking-widest uppercase animate-pulse">
-        Sincronizando con la Policía Militar...
+        Cargando personajes...
       </p>
     </div>
   );
