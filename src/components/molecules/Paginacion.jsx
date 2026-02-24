@@ -15,11 +15,15 @@ export default function Paginacion({ currentPage, totalPages, onPageChange }) {
 
       {/* Indicador de Página */}
       <div className="flex items-center gap-2">
-        <span className="text-gray-500 text-xs">PAGINA</span>
-        <span className="text-xl font-black text-black glow-green">
+        <span className="text-gray-500 dark:text-slate-400 text-xs">
+          PAGINA
+        </span>
+        <span className="text-xl font-black text-black dark:text-slate-100 glow-green">
           {currentPage.toString().padStart(2, "0")}
         </span>
-        <span className="text-gray-500 text-xs">/ {totalPages}</span>
+        <span className="text-gray-500 dark:text-slate-400 text-xs">
+          / {totalPages}
+        </span>
       </div>
 
       {/* Botón Siguiente */}
