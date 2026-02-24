@@ -1,7 +1,10 @@
-import { Children } from "react";
-import BarradeBusqueda from "../molecules/BarraBusqueda";
+"use client";
 import Nav from "../molecules/Nav";
+import { usePathname } from "next/navigation";
+import BtnTheme from "../atoms/BtnThme";
+import { useTheme } from "@/context/ThemeContext";
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
   /* Links de menu de navegacion */
   const link = [
     {
@@ -21,9 +24,13 @@ export default function Header() {
       className: "text-orange-500",
     },
   ];
+
+  const url = usePathname();
+
   return (
-    <header className="bg-black text-white flex flex-col justify-around items-center p-1 border-b border-slate-800 ">
-      <div className="flex">
+    <header className="bg-black text-white flex justify-around items-center p-1 border-b border-slate-800 ">
+      <div></div>
+      <div className="flex items-center">
         <div className="flex items-center">
           <img
             src="https://www.wallpaperflare.com/static/933/280/928/shingeki-no-kyojin-logo-attack-titans-wallpaper.jpg"
@@ -32,10 +39,13 @@ export default function Header() {
           />
         </div>
         <div className="flex items-center gap-3">
-          <Nav links={link}></Nav>
-          <hr className="border border-white h-10 hidden md:block" />
+          <Nav links={link} activePath={url}></Nav>
+          <hr className="border border-white h-10" />
           <Nav links={linkEx} />
         </div>
+      </div>
+      <div className="p-2">
+        <BtnTheme toggleTheme={toggleTheme} theme={theme}></BtnTheme>
       </div>
     </header>
   );

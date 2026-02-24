@@ -6,14 +6,13 @@ export default function Home() {
           Attackon Titan
         </h1>
         <p className="text-slate-50 text-sm md:text-base leading-relaxed tracking-wide font-sans bg-white/20 backdrop-blur-md p-6 rounded-sm border border-white/30">
-          <span className="text-green-500 font-bold">Shingeki no Kyojin</span>{" "}
-          es una obra maestra del dark fantasy que redefine el concepto de
-          supervivencia y libertad. La historia nos sumerge en un mundo donde la
-          humanidad vive confinada tras muros colosales para protegerse de los{" "}
-          <span className="italic text-gray-100">Titanes</span>, seres gigantes
-          devoradores de hombres. Lo que comienza como una lucha desesperada,
-          evoluciona hacia una compleja trama de conspiraciones políticas y una
-          cruda exploración de la naturaleza humana.
+          <span className="text-green-500 font-bold">Attack on Titan</span> is a
+          dark fantasy masterpiece that redefines the concepts of survival and
+          freedom. The story immerses us in a world where humanity lives
+          confined behind colossal walls to protect themselves from the Titans,
+          giant, man-eating beings. What begins as a desperate struggle evolves
+          into a complex web of political conspiracies and a raw exploration of
+          human nature.
         </p>
       </div>
     </section>

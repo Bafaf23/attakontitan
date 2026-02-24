@@ -9,7 +9,7 @@ export default function CardCharacter({
   residence,
 }) {
   return (
-    <div className="border border-slate-600 shadow-lg overflow-hidden relative bg-zinc-900 text-white">
+    <div className="border border-slate-600 shadow-lg overflow-hidden relative bg-zinc-900 text-white group rounded-md">
       {/* Contenedor de imagen con dimensiones para Next.js */}
       <div className="relative h-64 w-full">
         <Image
@@ -21,7 +21,6 @@ export default function CardCharacter({
         />
       </div>
 
-      {/* Overlay con información: ahora posicionado abajo con un degradado */}
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/90 to-transparent">
         <div className="mb-2">
           <h2 className="text-xl font-bold uppercase tracking-wider">{name}</h2>

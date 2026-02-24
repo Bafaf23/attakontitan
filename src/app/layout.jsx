@@ -5,6 +5,7 @@ config.autoAddCss = false;
 
 import Header from "@/components/organism/Header";
 import Footer from "@/components/organism/Footer";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata = {
   title: "AttackonTitan",
@@ -14,11 +15,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`antialiased`}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex grow flex-col bg-gray-100">{children}</main>
-        </div>
+      <body>
+        <ThemeProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex grow flex-col bg-gray-100 dark:bg-slate-800">
+              {children}
+            </main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

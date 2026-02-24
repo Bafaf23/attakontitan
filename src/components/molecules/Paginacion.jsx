@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Paginacion({ currentPage, totalPages, onPageChange }) {
+  const [page, setPage] = useState(1);
   return (
     <div className="flex items-center justify-center gap-4 my-10 font-mono">
       {/* Botón Anterior */}
