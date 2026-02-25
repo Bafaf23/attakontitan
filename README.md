@@ -27,7 +27,7 @@ Sigue estos pasos para ejecutar **Attackontitan** localmente:
 
     ```bash
     git clone [https://github.com/Bafaf23/attakontitan.git]
-    cd sigace
+    cd Attackontitan
     ```
 
 2.  **Instala las dependencias**:
