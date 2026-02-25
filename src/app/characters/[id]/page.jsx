@@ -38,7 +38,7 @@ export default function CharacterPageFull() {
         href={"/characters"}
         className="mb-6 text-blue-600 hover:underline self-start"
       >
-        ← Volver a la lista
+        ← Back to list
       </Link>
 
       <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg max-w-4xl w-full">
@@ -118,8 +118,7 @@ export default function CharacterPageFull() {
                         {rela.family}:
                       </h3>
 
-                      {/* Mapeamos cada miembro individualmente */}
-                      <div className="flex gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {rela.members.map((memberUrl, mIndex) => (
                           <FamilyMember key={mIndex} familyUrl={memberUrl} />
                         ))}

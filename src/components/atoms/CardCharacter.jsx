@@ -29,7 +29,7 @@ export default function CardCharacter({
               ? Array.isArray(alias)
                 ? alias[0]
                 : alias
-              : "Sin alias"}
+              : "No alias"}
           </p>
         </div>
 

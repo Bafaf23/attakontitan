@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex grow flex-col bg-gray-100 dark:bg-slate-800">
+            <main className="flex grow flex-col bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
               {children}
             </main>
           </div>

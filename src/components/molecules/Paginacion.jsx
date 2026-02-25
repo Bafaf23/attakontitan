@@ -10,14 +10,12 @@ export default function Paginacion({ currentPage, totalPages, onPageChange }) {
         disabled={currentPage === 1}
         className="px-4 py-2 border border-green-600 text-green-500 hover:bg-green-600 hover:text-black transition-all disabled:opacity-30 disabled:cursor-not-allowed uppercase text-xs font-bold skew-x--12deg"
       >
-        <span className="inline-block skew-x-12deg">Anterior</span>
+        <span className="inline-block skew-x-12deg">Former</span>
       </button>
 
       {/* Indicador de Página */}
       <div className="flex items-center gap-2">
-        <span className="text-gray-500 dark:text-slate-400 text-xs">
-          PAGINA
-        </span>
+        <span className="text-gray-500 dark:text-slate-400 text-xs">PAGE</span>
         <span className="text-xl font-black text-black dark:text-slate-100 glow-green">
           {currentPage.toString().padStart(2, "0")}
         </span>
@@ -32,7 +30,7 @@ export default function Paginacion({ currentPage, totalPages, onPageChange }) {
         disabled={currentPage === totalPages}
         className="px-4 py-2 border border-green-600 text-green-500 hover:bg-green-600 hover:text-black transition-all disabled:opacity-30 disabled:cursor-not-allowed uppercase text-xs font-bold skew-x--12deg"
       >
-        <span className="inline-block skew-x-12deg">Siguiente</span>
+        <span className="inline-block skew-x-12deg">Following</span>
       </button>
     </div>
   );

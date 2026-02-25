@@ -50,7 +50,7 @@ export default function FamilyMember({ familyUrl }) {
 
   if (isUrl && family && family.name) {
     return (
-      <div className="flex flex-row items-center gap-2 p-1 pr-3 rounded-full w-fit border border-slate-100">
+      <div className="flex flex-row items-center gap-2 p-1 pr-3 rounded-full w-fit border border-gray-400 dark:border-slate-100">
         <div>
           <Image
             src={family.img}
@@ -60,7 +60,7 @@ export default function FamilyMember({ familyUrl }) {
             className="rounded-full object-cover bg-slate-700"
           />
         </div>
-        <span className="text-slate-200 text-xs font-medium">
+        <span className="text-slate-500 dark:text-slate-200 text-xs font-medium">
           {family.name}
         </span>
       </div>
@@ -68,7 +68,7 @@ export default function FamilyMember({ familyUrl }) {
   }
 
   return (
-    <div className="text-slate-500 italic text-xs bg-slate-900/30 px-3 py-1 rounded-full border border-dashed border-slate-500 w-fit flex justify-center">
+    <div className="text-slate-500 italic text-xs bg-slate-500/30 px-3 py-1 rounded-full border border-dashed border-slate-500 w-fit flex justify-center items-center">
       {familyUrl}
     </div>
   );
