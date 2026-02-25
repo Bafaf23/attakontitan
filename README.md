@@ -21,12 +21,12 @@
 
 ## 📦 Instalación y Configuración
 
-Sigue estos pasos para ejecutar **SIGACE** localmente:
+Sigue estos pasos para ejecutar **Attackontitan** localmente:
 
 1.  **Clona el repositorio**:
 
     ```bash
-    git clone [https://github.com/tu-usuario/sigace.git](https://github.com/tu-usuario/sigace.git)
+    git clone [https://github.com/bafaf23/attakontitan.git](https://github.com/bafaf23/attakontitan.git)
     cd sigace
     ```
 
